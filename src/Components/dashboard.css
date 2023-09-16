@@ -1,0 +1,114 @@
+/* Main  */  
+.main-container {
+    grid-area: main;
+    overflow-y: auto;
+    padding: 20px 20px;
+    background-color: #f3efef;
+    /* color: rgba(255, 255, 255, 0.95); */
+}
+
+.main-title {
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+    margin: 15px 0;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 8px 15px;
+    border-radius: 5px;
+    box-shadow: 1.5px 1.5px #d0cece;
+}
+
+.card-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    line-height: -1px;
+}
+
+.card-inner > .card_icon {
+    font-size: 25px;
+}
+
+.charts {
+    /* display: grid;
+    grid-template-columns: 1fr 1fr; */
+    /* TODO: have to fix this margin for responsive. */
+    gap: 20px;
+    margin-top: 60px;
+    margin-left: 10px;
+    height: 300px;
+    box-shadow: 1px 1px 1px 1px #b5b2b2;
+    background-color: white;
+}
+
+/* Medium <= 992px */
+@media screen and (max-width: 992px) {
+	.grid-container {
+		grid-template-columns: 1fr;
+		grid-template-rows: 0.2fr 3fr;
+		grid-template-areas:
+		'header'
+		'main';
+	}
+
+	#sidebar {
+		display: none;
+	}
+
+	.menu-icon {
+		display: inline;
+	}
+
+	.sidebar-title > span {
+		display: inline;
+	}
+}
+	/* Small <= 768px */
+
+@media screen and (max-width: 768px) {
+	.main-cards {
+		grid-template-columns: 1fr;
+		gap: 10px;
+		margin-bottom: 0;
+	}
+
+	.charts {
+		grid-template-columns: 1fr;
+		margin-top: 30px;
+		margin-left: 0;
+	}
+}
+
+	/* .line-height {
+	line-height: 2.5px;
+	margin-left: -10px;
+	} */
+
+	/* Extra Small <= 576px */
+
+@media screen and (max-width: 576px) {
+	.hedaer-left {
+		display: none;
+	}
+}
+  
+.dark-theme {
+    background-color: #012169;
+    color: white;
+}
+  
+.dark-cards {
+    color: white;
+    background-color: #274180;
+    box-shadow: 1px 1px #274180;
+}

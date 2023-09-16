@@ -1,0 +1,100 @@
+{
+    "revenueData": [
+        {
+            "month": "Sep",
+            "revenue": 275
+        },
+        {
+            "month": "Oct",
+            "revenue": 530
+        },
+        {
+            "month": "Nov",
+            "revenue": 400
+        },
+        {
+            "month": "Dec",
+            "revenue": 220
+        },
+        {
+            "month": "Jan",
+            "revenue": 180
+        },
+        {
+            "month": "Feb",
+            "revenue": 200
+        },
+        {
+            "month": "Mar",
+            "revenue": 400
+        },
+        {
+            "month": "Apr",
+            "revenue": 345
+        },
+        {
+            "month": "May",
+            "revenue": 580
+        },
+        {
+            "month": "Jun",
+            "revenue": 240
+        },
+        {
+            "month": "Jul",
+            "revenue": 330
+        },
+        {
+            "month": "Aug",
+            "revenue": 380
+        }
+    ],
+    "salesData": [
+        {
+            "category": "Electronics",
+            "sales": 30
+        },
+        {
+            "category": "FMCG",
+            "sales": 25
+        },
+        {
+            "category": "Food",
+            "sales": 20
+        },
+        {
+            "category": "Cloths",
+            "sales": 15
+        },
+        {
+            "category": "Medicins",
+            "sales": 10
+        }
+    ],
+    "storesData": [
+        {
+            "storeName": "DEF Ltd.",
+            "revenue": 5000
+        },
+        {
+            "storeName": "ABC Ent.",
+            "revenue": 1000
+        },
+        {
+            "storeName": "JKL Ent.",
+            "revenue": 3000
+        },
+        {
+            "storeName": "MNO Ltd.",
+            "revenue": 6000
+        },
+        {
+            "storeName": "GHI Co.",
+            "revenue": 4000
+        },
+        {
+            "storeName": "PQR Co.",
+            "revenue": 7000
+        }
+    ]
+}

@@ -1,25 +1,29 @@
-import logo from './logo.svg';
+import { useState } from 'react';
 import './App.css';
+import Dashboard from './Components/Dashboard';
+import Header from './Layouts/Header/Header';
+import Sidebar from './Layouts/Sidebar/Sidebar';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+    const [openSidebarToggle, setOpenSidebarToggle] = useState(false);
+    const [theme, setTheme] = useState(false);
+
+    const OpenSidebar = () => {
+      setOpenSidebarToggle(!openSidebarToggle)
+    }
+
+    const changeTheme = (event) => {
+      event.preventDefault();
+      setTheme(!theme);
+    };
+  
+    return (
+      <div className='grid-container'>
+        <Header OpenSidebar={OpenSidebar} theme={theme} setTheme={setTheme} />
+        <Sidebar openSidebarToggle={openSidebarToggle} OpenSidebar={OpenSidebar} theme={theme} setTheme={setTheme} />
+        <Dashboard theme={theme} setTheme={setTheme} />
+      </div>
+    )
+  }
 
 export default App;
