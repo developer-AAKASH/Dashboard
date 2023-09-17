@@ -3,10 +3,11 @@ import {dashboardImages} from '../constants/Images';
 import data from '../data/data.json';
 import BarChart from './BarChart';
 import HorizontalBarChart from './HorizontalBarChart';
-import LineChart from './LineChart';
 import Doughnut from './Doughnut';
 import Card from './Card';
+import TabularData from './TabularData';
 import './dashboard.css';
+import SimpleTableData from './SimpleTableData';
 
 function Dashboard({ theme }) {
 
@@ -44,6 +45,8 @@ function Dashboard({ theme }) {
 		}]
 	});
 
+    const simpleTableData = data.weatheBuyingItem;
+
   return (
     <main className={`main-container ${theme ? 'dark-theme' : ''}`}>
         <div className='main-title'>
@@ -79,19 +82,21 @@ function Dashboard({ theme }) {
         </div>
 
         <div className='row'>
-            <div className={`charts col-md-6 ${theme ? 'dark-cards' : ''}`}>
+            <div className={`card m-1 col-md-5 ${theme ? 'dark-cards' : ''}`}>
                 <BarChart chartData={revenueData} theme={theme} />
             </div>
-            <div className={`charts col-md-5 ${theme ? 'dark-cards' : ''}`}>
-                <LineChart chartData={revenueData} theme={theme} />
+            <div className={`card m-2 col-md-6 ${theme ? 'dark-cards' : ''}`}>
+                <TabularData theme={theme} />
             </div>
-            <div className={`charts col-md-3 ${theme ? 'dark-cards' : ''}`}>
+        </div>
+        <div className='row'>
+            <div className={`card m-2 col-md-3 ${theme ? 'dark-cards' : ''}`}>
                 <Doughnut chartData={salesData} theme={theme} />
             </div>
-            <div className={`charts col-md-3 ${theme ? 'dark-cards' : ''}`}>
-                <BarChart chartData={revenueData} theme={theme} />
+            <div className={`card m-2 col-md-3 ${theme ? 'dark-cards' : ''}`}>
+                <SimpleTableData theme={theme} data={simpleTableData} />
             </div>
-            <div className={`charts col-md-5 ${theme ? 'dark-cards' : ''}`}>
+            <div className={`card m-2 col-md-5 ${theme ? 'dark-cards' : ''}`}>
                 <HorizontalBarChart chartData={storesData} theme={theme} />
             </div>
         </div>

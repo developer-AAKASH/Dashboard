@@ -10,7 +10,7 @@ function Header({OpenSidebar, theme}) {
   return (
     <header className={allClassName}>
         <div className='header-left'>
-            <GiHamburgerMenu  className='icon' onClick={ width < 768 ? OpenSidebar : undefined}/> LOOP
+            <GiHamburgerMenu  className='icon' onClick={ width < 850 ? OpenSidebar : undefined}/> LOOP
         </div>
         <div className='header-right'>
             <BsPersonCircle className='icon'/>

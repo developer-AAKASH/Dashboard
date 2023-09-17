@@ -16,7 +16,7 @@ function Sidebar({ openSidebarToggle, OpenSidebar, theme, setTheme }) {
     return (
         <aside id="sidebar" className={allClassName}>
             <div>
-                {width < 768 &&
+                {width < 850 &&
                     <div className='sidebar-title'>
                         <span className='icon close_icon' onClick={OpenSidebar}>X</span>
                     </div>}

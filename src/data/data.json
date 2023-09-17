@@ -96,5 +96,76 @@
             "storeName": "PQR Co.",
             "revenue": 7000
         }
+    ],
+    "salesItemsData": [
+        {
+            "id": 1,
+            "itemCategory": "Item name 1",
+            "APSD": "$856.60",
+            "UPSD": 99.64,
+            "skuStock": 25
+        },
+        {
+            "id": 2,
+            "itemCategory": "Item name 2",
+            "APSD": "$282.45",
+            "UPSD": 51.18,
+            "skuStock": 40
+        },
+        {
+            "id": 3,
+            "itemCategory": "Item name 3",
+            "APSD": "$395.73",
+            "UPSD": 136.13,
+            "skuStock": 0
+        },
+        {
+            "id": 4,
+            "itemCategory": "Item name 4",
+            "APSD": "$37.56",
+            "UPSD": 7.04,
+            "skuStock": 125
+        },
+        {
+            "id": 5,
+            "itemCategory": "Item name 5",
+            "APSD": "$590.50",
+            "UPSD": 294.65,
+            "skuStock": 70
+        },
+        {
+            "id": 6,
+            "itemCategory": "Item name 6",
+            "APSD": "$108.45",
+            "UPSD": 62.98,
+            "skuStock": 90
+        }
+    ],
+    "weatheBuyingItem": [
+        {
+            "id": 1,
+            "itemCategory": "Cigrattes",
+            "stockStatus": true
+        },
+        {
+            "id": 2,
+            "itemCategory": "Beer",
+            "stockStatus": false
+        },
+        {
+            "id": 3,
+            "itemCategory": "Wine",
+            "stockStatus": true
+        },
+        {
+            "id": 4,
+            "itemCategory": "Hot dispensed beverage",
+            "stockStatus": false
+        },
+        {
+            "id": 5,
+            "itemCategory": "Frozen dispensed beverage",
+            "stockStatus": true
+        }
     ]
 }

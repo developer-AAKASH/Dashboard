@@ -16,6 +16,21 @@ function Card ({ theme, image, label1, label2, label3}) {
                     </div>
                 </div>
             </div>
+            {/* 
+            <div className={`col-lg-3 col-md-5 card ${theme ? 'dark-cards' : ''}`}>
+                <div className='row'>
+                    <div className='col-3'>
+                        <img src={image} className='icon' alt={image} />
+                    </div>
+                    <div className='col-9'>
+                        <h5>{label1}</h5>
+                        <h4>{label2}</h4>
+                        <h6>{label3}</h6>
+                    </div>
+                </div>
+            </div>
+            
+            */}
         </>
     );
 }

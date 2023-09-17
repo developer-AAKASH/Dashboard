@@ -85,7 +85,7 @@
 		display: inline;
 	}
 }
-	/* Small <= 768px */
+/* Small <= 768px */
 
 @media screen and (max-width: 768px) {
 	.main-cards {
@@ -99,14 +99,11 @@
 		margin-top: 30px;
 		margin-left: 0;
 	}
+
+	.sidebar-title > span {
+		display: inline;
+	}
 }
-
-	/* .line-height {
-	line-height: 2.5px;
-	margin-left: -10px;
-	} */
-
-	/* Extra Small <= 576px */
 
 @media screen and (max-width: 576px) {
 	.hedaer-left {
